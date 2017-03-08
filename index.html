@@ -44,7 +44,42 @@ The Star Wars Test
  <!-- Listivew With Next and Previous -->
   <script>
   </script>
-  
+  <!-- SingleView of People-->
+<h1>Single View of People</h1>
+<ul>
+
+    <li ng-repeat="x in names">{{x}}</li>
+</ul>
+
+<p ng-model="iptek.angular.swapi">{{name}}</p>
+
+
+
+<script>
+
+
+var named = {
+   "name": "Luke Skywalker",
+      "height": "1.72 m",
+      "mass": "77 Kg",
+      "hair_color": "Blond",
+      "skin_color": "Caucasian",
+      "eye_color": "Blue",
+      "birth_year": "19 BBY",
+      "gender": "Male",
+      "homeworld": "http://swapi.co/api/planets/1/"
+};
+var app = angular.module('myApp', []);
+
+app.controller('myCtrl', function($scope){
+
+$scope.names = m;
+});
+
+
+
+
+</script>
   <!-- Listivew With People Only -->
 <h1>Seach People</h1>
 <form>
@@ -93,7 +128,7 @@ The Star Wars Test
         });
       }
     </script>
-
+</div>
 <!---Click to Navigate to Destination--->
 <p>ipeleng.bela@gmail.com</p>
 </body>
