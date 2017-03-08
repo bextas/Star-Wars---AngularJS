@@ -1,21 +1,40 @@
 <!DOCTYPE html>
+<!--Author: ipeleng.bela@gmail.com -->
 <html>
 <title>
-
+The Star Wars - Test
 </title>
 <head>
-<!-- Inlcude Angular and Swapi APIs-->
-<link rel="stylesheet" href="/maps/documentation/javascript/demo/demo.css">
-<link rel="stylesheet" href="css/angular.js"/>
-<link rel="stylesheet" href="css/angular-min.js"/>
-<!-- Import Swapi API -->
+<!-- Inlcude Angular API-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<!-- Swapi.ico API-->
+<link rel="stylesheet" href="/js/angular-swapi.js">
+<link rel="stylesheet" href="/js/angular-swapi.min.js">
+<script async defer src="https://swapi.co/api"></script>
+
+
+<!-- For Later Styling -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="bower_components/angular-ui-list-view/dist/css/angular-ui-list-view.css">
 
 
 
 </head>
 <body>
+  <!-- Beiniging Code War Test 1 -->
 <h1>Star Wars </h1>
-<h2>People | Creatres</h2>
+  
+ <!-- Ul-List - include list view.js -->
+
+  
+  <div ng-module="SwarApp" ng-Controller="Crt">
+    <h2>People | Creatres</h2>
+   </div>
+  <!-- Listivew With Next and Previous -->
+  <script>
+  </script>
+  
 <p>People 1 | Creature 1</p>
 <p>People 2 | Creature 2</p>
 <p>People 3 | Creature 3</p>
@@ -25,25 +44,30 @@
 <!--Next and Previous -->
 <p><a>Next</a> | <a>Previous</a></p>
 
+  
+  <!-- Listivew With People Only -->
 <h1>Seach People</h1>
 <form>
 <input type="text" name="people" placeholder="Search People">
 <input type="submit" value="Submit">
 </form>
 <ul>
+  
+
 <li>People</li>
 <li>People</li>
 <li>People</li>
 <li>People</li>
 <li>People</li>
 </ul>
-<a href="">Next</a> | <a href="">Previous</a>
 
-<!-- View Google Map -->
-<h1>Comic Stores</h1 <>
-<!--Comic Store -->
-<p>Nearby</p>
-<!---insert icon buttons--->
+
+  <!-- Google Map - Nearby Comic Stores -->
+  
+  <span><h1>Comic Stores</h1><p>Nearby</p></span>
+
+
+<!---Click to Navigate to Destination--->
 <p>ipeleng.bela@gmail.com</p>
 </body>
 </html>
