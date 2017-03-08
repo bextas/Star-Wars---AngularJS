@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--Author: ipeleng.bela@gmail.com -->
+<!--Author:ipeleng.bela@gmail.com -->
 <html>
 <title>
-The Star Wars - Test
+The Star Wars Test
 </title>
 <head>
 <!-- Inlcude Angular API-->
@@ -25,25 +25,25 @@ The Star Wars - Test
   <!-- Beiniging Code War Test 1 -->
 <h1>Star Wars </h1>
   
- <!-- Ul-List - include list view.js -->
+ <!-- LISTVIEW- include listview.js -->
 
-  
+  <!-- Star War App Angine -->
   <div ng-module="SwarApp" ng-Controller="Crt">
     <h2>People | Creatres</h2>
-   </div>
-  <!-- Listivew With Next and Previous -->
-  <script>
-  </script>
-  
-<p>People 1 | Creature 1</p>
-<p>People 2 | Creature 2</p>
-<p>People 3 | Creature 3</p>
-<p>People 4 | Creature 4</p>
-<p>People 5 | Creature 5</p>
-
+   
+ 
+  <!-- Tag HTML element use  - ng-repeat class - loop-->
+<p ng-ngular="" ng-controller="Crt">{{people 1}} | {{species 2}} </p>
+<!-- <p ng-repeat="people in people">{{people 1}} | {{species 2}}</p> -->
+<p>{{people 1}} | {{species 2}}</p>
+<p>{{people 1}} | {{species 2}}</p>
+<p>{{people 1}} | {{species 2}}</p>
+</div>
 <!--Next and Previous -->
 <p><a>Next</a> | <a>Previous</a></p>
-
+ <!-- Listivew With Next and Previous -->
+  <script>
+  </script>
   
   <!-- Listivew With People Only -->
 <h1>Seach People</h1>
@@ -62,10 +62,37 @@ The Star Wars - Test
 </ul>
 
 
-  <!-- Google Map - Nearby Comic Stores -->
-  
-  <span><h1>Comic Stores</h1><p>Nearby</p></span>
+<!-- Google Map Engine-->
 
+    <script>
+      function initMap() {
+        var myLatlng = {lat: -26.1887538, lng: 28.1232405};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: myLatlng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Go to Comic Store'
+        });
+
+        map.addListener('center_changed', function() {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(function() {
+            map.panTo(marker.getPosition());
+          }, 3000);
+        });
+
+        marker.addListener('click', function() {
+          map.setZoom(14);
+          map.setCenter(marker.getPosition());
+        });
+      }
+    </script>
 
 <!---Click to Navigate to Destination--->
 <p>ipeleng.bela@gmail.com</p>
