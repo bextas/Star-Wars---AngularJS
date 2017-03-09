@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<!--Author:ipeleng.bela@gmail.com -->
+<html>
+<title>
+The Star Wars Test
+</title>
+<head>
+<!-- Inlcude Angular API-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<!-- Swapi.ico API-->
+<link rel="stylesheet" href="/js/angular-swapi.js">
+<link rel="stylesheet" href="/js/angular-swapi.min.js">
+<script async defer src="https://swapi.co/api"></script>
+
+
+<!-- For Later Styling -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link rel="stylesheet" href="bower_components/angular-ui-list-view/dist/css/angular-ui-list-view.css">
+
+</head>
+
+<!-- Beggin Starwars -->
+<body ng-app="starwarsApp">
+<!-- 1. Listview - People & Species--->
+
+
+
+
+
+
+
+<!-- 2. Listview - Search People --->
+
+
+
+
+
+
+
+<!-- 3. Listview - Single People --->
+
+
+
+
+
+
+
+<!-- Google Map with Navigation-->
+
+
+
+
+</body>
+</html>
